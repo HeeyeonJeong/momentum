@@ -33,7 +33,7 @@ function paintToDo(text) {
   li.appendChild(delBtn);
   li.appendChild(span);
 
-  delBtn.innerHTML = "del";
+  delBtn.innerHTML = "✔";
   span.innerHTML = text;
   li.id = newId;
 

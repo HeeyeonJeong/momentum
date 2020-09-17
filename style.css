@@ -4,7 +4,35 @@
 }
 
 body {
+  font-family: "Noto Sans KR", sans-serif;
   background-color: #b0bec5;
+  height: 100vh;
+  font-weight: 700;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button,
+input {
+  font-family: "Noto Sans KR", sans-serif;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* clock */
+.clock h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 5px gray;
 }
 
 /* user */
@@ -15,6 +43,36 @@ body {
 
 .showing {
   display: block;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 3px 4px 4px gray;
+}
+
+/* todo */
+.toDoInput {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: transparent;
+  border-bottom: 3px solid white;
+  font-size: 20px;
+  color: white;
+}
+
+.toDoList {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.toDoList button {
+  margin-right: 10px;
+  background: transparent;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 /* backImg */
@@ -35,4 +93,13 @@ body {
   to {
     opacity: 1;
   }
+}
+
+/* weather */
+.weather {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  color: #ffffff;
 }

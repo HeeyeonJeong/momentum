@@ -10,11 +10,10 @@ function getWeather(lat, lon) {
       return reponse.json();
     })
     .then(function (json) {
-      console.log(json);
       const temperature = json.main.temp;
       const place = json.name;
       const type = json.weather[0].main;
-      weather.innerHTML = `${temperature}°C / ${type} / ${place}`;
+      weather.innerHTML = `${temperature} °C / ${type} / ${place}`;
     });
 }
 
